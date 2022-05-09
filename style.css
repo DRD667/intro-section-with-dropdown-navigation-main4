@@ -1,0 +1,155 @@
+/* # Front-end Style Guide
+
+## Layout
+
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+## Colors
+
+### Neutral
+
+- Almost White: hsl(0, 0%, 98%)
+- Medium Gray: hsl(0, 0%, 41%)
+- Almost Black: hsl(0, 0%, 8%)
+
+## Typography
+
+### Body Copy
+
+- Font size (paragraph): 18px
+
+### Font
+
+- Family: [Epilogue](https://fonts.google.com/specimen/Epilogue)
+- Weights: 500, 700
+ */
+
+ :root{
+    --Almost-White: hsl(0, 0%, 98%);
+    --Medium-Gray: hsl(0, 0%, 41%);
+    --Almost-Black: hsl(0, 0%, 8%);  
+ }
+
+
+
+ body{
+     font-family: Epilogue, Poppins, sans-serif;
+     margin:2rem 1rem;
+     text-align: center;
+     line-height: 1.5;
+ }
+
+ body.dark{
+     background-color: var(--Almost-Black);
+     color: var(--Almost-White);
+ }
+
+ #wrapper>*{
+    margin: 2.5rem 0;
+
+ }
+
+ header,footer .companies{
+     display: flex;
+     justify-content: space-between;
+ }
+
+
+ .hero-image{
+     width: 100vw;
+     margin: -1rem;
+ }
+
+ #ham-menu{
+     z-index: 100;
+     position: relative;
+ }
+
+ .uncollapsed{
+     width: 60vw;
+     background-color: var(--Almost-White);
+     position: fixed;
+     right: 0;
+     right: -60vw;
+     top: 0;
+     bottom: 0;
+     padding-top: 5em;
+     transition: 0.3s;
+ }
+
+ section.nested-list{
+     display: none;
+ }
+
+
+ .uncollapsed.show{
+     right: 0;
+ }
+
+ .nested-list{
+     padding-left: 2em;
+ }
+
+ .nested-links{
+     margin-left: 1em;
+ }
+
+ section.nested-list.show{
+     display: block;
+ }
+
+ 
+
+ .nav-links{
+     text-align: left;
+     line-height: 3;
+ }
+
+ .account a{
+     display: block;
+     margin: 1rem;
+ }
+
+ .register{
+     border: 2px solid var(--Medium-Gray);
+     border-radius: 10px;
+     padding: 0.775em;
+ }
+ 
+
+ a{
+    color: var(--Medium-Gray);
+     cursor: pointer;
+     text-decoration: none;
+ }
+
+ li{
+     list-style: none;
+ }
+
+
+ .text-content .heading{
+     margin-top: 2em;
+     font-weight: bolder;
+ }
+
+ .text-content .desc{
+     color: var(--Medium-Gray);
+ }
+
+ button.learn-more{
+     background-color: var(--Almost-Black);
+     color: var(--Almost-White);
+     font-size: 1rem;
+     font-family: Epilogue;
+     padding: 1em 1.3em;
+     border-radius: 10px;
+     margin: 1em 0 1.5em;
+}
+
+img{
+    max-width: 100%;
+}
